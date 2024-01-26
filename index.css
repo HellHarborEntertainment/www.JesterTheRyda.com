@@ -101,3 +101,6 @@ nav {
     margin-bottom: 120px;
 }
 
+iframe {
+  opacity: 0.6589; /* Set the opacity here */
+}
