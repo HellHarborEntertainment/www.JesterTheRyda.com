@@ -76,7 +76,29 @@
         });
     </script>
     
- 
+    <h1>The Fiend & Fairy Lore</h1>
+    <div class="fiend-and-fairy-lore" id="markdownContent2"></div>
+    <script>
+      function convertMarkdownToHTML(markdown) {
+        // Use a Markdown parser library like Showdown.js (https://github.com/showdownjs/showdown)
+        var converter = new showdown.Converter();
+        return converter.makeHtml(markdown);
+      }
+  
+      // Fetch the Markdown content from the URL
+      fetch('https://raw.githubusercontent.com/HellHarborEntertainment/www.JesterTheRyda.com/main/info/lore/fiend-and-fairy-details.md')
+        .then(response => response.text())
+        .then(markdown => {
+          // Convert the Markdown content to HTML
+          var html = convertMarkdownToHTML(markdown);
+  
+          // Insert the HTML content into the page
+          document.getElementById('markdownContent2').innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    </script>
     
     <footer>
         <p>&copy; 2018-2024 HELL HARBOR ENTERTAINMENT ALL RIGHTS RESERVED</p>
