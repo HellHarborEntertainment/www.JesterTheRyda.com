@@ -22,3 +22,6 @@ On the date of 05/15/2023 a patient named Jordin "JesterTheRyda" Bryant had chec
 
 ## I Still Exist
 After a five year long period of time in the shadows writing the record, paired with a long hiatus due to being in the care of Harbor's Hollow Psychiatric Hospital, I Still Exist is a live concert experience that starts off with Jester selling tickets to the show in the parking lot before the show begins. Once the show starts, it takes listeners on a journey through the early beginnings of Jester's career as a musician, with some of his first songs ever written, all the way to some of his newest and most intricate songs.  The record has instrumental production from RydaGangProd, Noctur, Wyshmaster, and Anno Domini. It also has featured verses from Poltergyst, Lydia Caesar, Krayzie Bone, Twista, and Twisted Insane! 
+
+## Mobster Moves
+Not much is known about the lore of this record, and understandably so. However what is known about it is, in March of 2024, the EP "Mobster Moves" was released to the world by JesterTheRyda. It begins with the ritual of Omerta before launching into a plethora of pure bars and intense storytelling with heavy mafia influence. With features from Poltergyst, Kool G. Rap, Raheem DeVaughn, Ghostface Killah, Big Twins of Infamous Mobb, and Havoc of Mobb Deep, you already know that this project will be pure flames.   
