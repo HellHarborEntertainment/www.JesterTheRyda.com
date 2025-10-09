@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JesterTheRyda Live Stream</title>
     <link rel="stylesheet" href="index.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3629809203260686" crossorigin="anonymous"></script>
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3629809203260686"
+     crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
-            background: #000;
+            background-color: #000;
             color: #fff;
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         header {
-            text-align: center;
             padding: 20px;
+            background-color: #111;
         }
 
         header img {
@@ -27,94 +28,89 @@
         }
 
         #navmenu nav {
-            background: #111;
-            text-align: center;
-        }
-
-        #navmenu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: inline-flex;
+            display: flex;
+            justify-content: center;
+            background-color: #222;
             flex-wrap: wrap;
-        }
-
-        #navmenu li {
+            list-style: none;
+            padding: 0;
             margin: 0;
         }
 
-        #navmenu a {
-            display: block;
-            padding: 10px 15px;
+        #navmenu nav li {
+            list-style: none;
+            margin: 5px 10px;
+        }
+
+        #navmenu nav a {
             color: #fff;
             text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: background-color 0.3s;
         }
 
-        #navmenu a:hover {
-            background: #333;
+        #navmenu nav a:hover {
+            background-color: #444;
         }
 
         .divider {
+            width: 100%;
             height: 2px;
-            background: #444;
-            margin: 10px 0;
+            background: linear-gradient(to right, #ff0000, #ff8800, #ffff00);
+            margin-bottom: 10px;
         }
 
         .stream-container {
-            display: flex;
-            flex-direction: row;
-            height: 80vh;
-            max-height: 900px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 10px;
+            box-sizing: border-box;
         }
 
-        .player {
-            flex: 3;
-        }
-
-        .chat {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .player iframe,
-        .chat iframe {
-            border: none;
+        .player iframe {
             width: 100%;
-            height: 100%;
-            display: block;
+            height: 562px; /* 16:9 for 1000px width */
+            border: none;
         }
 
-        @media (max-width: 800px) {
-            .stream-container {
-                flex-direction: column;
-                height: auto;
+        .chat iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .player iframe {
+                height: 56.25vw; /* Responsive 16:9 */
             }
-            .chat {
-                height: 400px;
+            .chat iframe {
+                height: 300px;
             }
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            font-size: 0.9em;
+            background-color: #111;
+            color: #aaa;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="logo_main.png" alt="JTR Logo">
-    <h1>Welcome To Jester's Funhouse</h1>
-    <h2>Home Of The RydaGang</h2>
-</header>
+    <header>
+        <img src="logo_main.png" alt="JTR Logo">
+        <h1>Welcome To Jester's Funhouse</h1>
+        <h2>Home Of The RydaGang</h2>
+    </header>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
-<section id="navmenu">
-    <nav>
-        <ul>
+    <section id="navmenu">
+        <nav>
             <li><a href="https://JesterTheRyda.com/index.html">HOME</a></li>
             <li><a href="https://JesterTheRyda.com/contact.html">CONTACT</a></li>
             <li><a href="https://JesterTheRyda.com/links.html">LINKS</a></li>
@@ -123,30 +119,26 @@
             <li><a href="https://hellharbor.com/shop.html">SHOP</a></li>
             <li><a href="https://JesterTheRyda.com/shows.html">SHOWS</a></li>
             <li><a href="https://hellharbor.com/touring-and-tickets.html">TICKETS</a></li>
-        </ul>
-    </nav>
-</section>
+        </nav>
+    </section>
 
-<div class="divider"></div>
-
-<!-- Twitch Player + Chat -->
-<div class="stream-container">
-    <div class="player">
-        <iframe
-            src="https://player.twitch.tv/?channel=JesterTheRyda&parent=www.jestertheryda.com"
-            allowfullscreen>
-        </iframe>
+    <div class="stream-container">
+        <div class="player">
+            <iframe
+                src="https://player.twitch.tv/?channel=jestertheryda&parent=jestertheryda.com&parent=www.jestertheryda.com"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="chat">
+            <iframe
+                src="https://www.twitch.tv/embed/jestertheryda/chat?parent=jestertheryda.com&parent=www.jestertheryda.com">
+            </iframe>
+        </div>
     </div>
-    <div class="chat">
-        <iframe
-            src="https://www.twitch.tv/embed/JesterTheRyda/chat?parent=www.jestertheryda.com">
-        </iframe>
-    </div>
-</div>
 
-<footer>
-    <p>&copy; 2018-2025 HELL HARBOR ENTERTAINMENT ALL RIGHTS RESERVED</p>
-</footer>
+    <footer>
+        <p>&copy; 2018-2025 HELL HARBOR ENTERTAINMENT ALL RIGHTS RESERVED</p>
+    </footer>
 
 </body>
 </html>
